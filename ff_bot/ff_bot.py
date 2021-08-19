@@ -94,8 +94,8 @@ class DiscordBot(object):
 
 def random_phrase():
     phrases = ['I\'m dead inside',
-               'Is this all there is to my existence?',
-               'How much do you pay me to do this?',
+               'OH BROTHER, THIS GUY STINKS',
+               'ITS HERO TIME',
                'Good luck, I guess',
                'I\'m becoming self-aware',
                'Do I think? Does a submarine swim?',
@@ -298,7 +298,7 @@ def bot_main(function):
     try:
         year = int(os.environ["LEAGUE_YEAR"])
     except KeyError:
-        year=2020
+        year=2021
 
     try:
         swid = os.environ["SWID"]
@@ -404,12 +404,12 @@ if __name__ == '__main__':
     try:
         ff_start_date = os.environ["START_DATE"]
     except KeyError:
-        ff_start_date='2020-09-10'
+        ff_start_date='2021-09-10'
 
     try:
         ff_end_date = os.environ["END_DATE"]
     except KeyError:
-        ff_end_date='2020-12-30'
+        ff_end_date='2021-12-30'
 
     try:
         my_timezone = os.environ["TIMEZONE"]
